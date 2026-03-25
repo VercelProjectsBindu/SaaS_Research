@@ -3,7 +3,7 @@
 This contains everything you need to run your app locally.
 
 # View Live Demo
-url: coming soon
+url: https://saa-s-research.vercel.app
 
 ## Run Locally
 

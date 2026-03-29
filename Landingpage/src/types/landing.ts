@@ -84,13 +84,7 @@ export interface ContactData {
   title: string;
   description: string;
   email: string;
-  form: {
-    firstName: string;
-    lastName: string;
-    email: string;
-    message: string;
-    submit: string;
-  };
+  form: Record<string, string>;
 }
 
 export interface FooterData {

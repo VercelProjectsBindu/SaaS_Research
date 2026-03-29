@@ -7,9 +7,10 @@ export interface HeroFullData {
 }
 
 export async function getHeroData(): Promise<HeroFullData> {
-  const data = await fetchFromApi<LandingPageData>('/data');
-  return {
-    content: data.hero,
-    cards: data.featureCards
-  };
+  const [content, cards] = await Promise.all([
+    fetchFromApi<HeroData>('/data/hero'),
+    fetchFromApi<FeatureCard[]>('/data/featureCards')
+  ]);
+  
+  return { content, cards };
 }

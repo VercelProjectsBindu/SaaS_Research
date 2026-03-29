@@ -53,12 +53,12 @@ const Hero = () => {
             transition={{ delay: 1, duration: 1 }}
             className="mt-16 flex flex-col items-center gap-6"
           >
-            <p className="text-sm font-bold text-neutral-400 uppercase tracking-[0.2em]">Trusted by teams at</p>
+            <p className="text-sm font-bold text-neutral-400 dark:text-neutral-500 uppercase tracking-[0.2em]">Trusted by teams at</p>
             <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale group hover:grayscale-0 transition-all duration-500">
-              <div className="text-base md:text-xl font-black italic tracking-tighter text-neutral-900 dark:text-neutral-50">TECHFLOW</div>
-              <div className="text-base md:text-xl font-black italic tracking-tighter text-neutral-900 dark:text-neutral-50">GENSYS</div>
-              <div className="text-base md:text-xl font-black italic tracking-tighter text-neutral-900 dark:text-neutral-50">BIOLAB</div>
-              <div className="text-base md:text-xl font-black italic tracking-tighter text-neutral-900 dark:text-neutral-50">DATACORE</div>
+              <div className="text-base md:text-xl font-black italic tracking-tighter text-neutral-900 dark:text-neutral-100">TECHFLOW</div>
+              <div className="text-base md:text-xl font-black italic tracking-tighter text-neutral-900 dark:text-neutral-100">GENSYS</div>
+              <div className="text-base md:text-xl font-black italic tracking-tighter text-neutral-900 dark:text-neutral-100">BIOLAB</div>
+              <div className="text-base md:text-xl font-black italic tracking-tighter text-neutral-900 dark:text-neutral-100">DATACORE</div>
             </div>
           </motion.div>
 
@@ -66,7 +66,7 @@ const Hero = () => {
           <motion.div 
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="mt-12 flex flex-col items-center gap-2 text-neutral-400 cursor-pointer hover:text-primary transition-colors"
+            className="mt-12 flex flex-col items-center gap-2 text-neutral-400 dark:text-neutral-300 cursor-pointer hover:text-primary transition-colors"
           >
             <span className="text-[10px] uppercase tracking-widest font-bold">Scroll to Discovery</span>
             <div className="w-px h-12 bg-gradient-to-b from-primary to-transparent" />

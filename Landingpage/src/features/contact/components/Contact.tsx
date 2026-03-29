@@ -13,10 +13,10 @@ const Contact = () => {
   if (!data) return <div className="py-24 bg-gray-50 animate-pulse h-[500px]" />;
 
   return (
-    <section id="contact" className="py-24 bg-gray-50">
+    <section id="contact" className="py-24 bg-gray-50 dark:bg-neutral-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-[3rem] shadow-xl overflow-hidden grid md:grid-cols-2">
-          <div className="p-12 bg-black text-white flex flex-col justify-between">
+        <div className="bg-white dark:bg-neutral-800 rounded-[3rem] shadow-xl overflow-hidden grid md:grid-cols-2 border border-transparent dark:border-neutral-700">
+          <div className="p-12 bg-neutral-950 dark:bg-neutral-900 text-white flex flex-col justify-between">
             <div>
               <h2 className="text-4xl font-bold mb-6">{data.title}</h2>
               <p className="text-gray-400 mb-12">
@@ -41,23 +41,23 @@ const Contact = () => {
             <form className="space-y-6">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold">{data.form.firstName}</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                  <label className="text-sm font-semibold text-neutral-900 dark:text-neutral-300">{data.form.firstName}</label>
+                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-sm font-semibold">{data.form.lastName}</label>
-                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                  <label className="text-sm font-semibold text-neutral-900 dark:text-neutral-300">{data.form.lastName}</label>
+                  <input type="text" className="w-full px-4 py-3 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-semibold">{data.form.email}</label>
-                <input type="email" className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                <label className="text-sm font-semibold text-neutral-900 dark:text-neutral-300">{data.form.email}</label>
+                <input type="email" className="w-full px-4 py-3 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-semibold">{data.form.message}</label>
-                <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
+                <label className="text-sm font-semibold text-neutral-900 dark:text-neutral-300">{data.form.message}</label>
+                <textarea rows={4} className="w-full px-4 py-3 rounded-xl border border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-50 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all" />
               </div>
-              <button className="w-full bg-black text-white py-4 rounded-xl font-bold hover:bg-gray-800 transition-all">
+              <button className="w-full bg-neutral-900 dark:bg-neutral-100 text-white dark:text-neutral-900 py-4 rounded-xl font-bold hover:opacity-90 transition-all">
                 {data.form.submit}
               </button>
             </form>

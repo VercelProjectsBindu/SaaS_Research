@@ -1,5 +1,5 @@
 import express from 'express';
-import { LANDING_DATA } from './data.js';
+import { LANDING_DATA } from './data.ts';
 
 const app = express();
 const port = 3001;

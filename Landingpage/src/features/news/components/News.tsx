@@ -27,8 +27,12 @@ const News = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {data.articles.map((article, i) => (
             <div key={i} className="group cursor-pointer">
-              <div className="aspect-video bg-gray-100 rounded-2xl mb-6 overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 group-hover:scale-105 transition-transform duration-500" />
+              <div className="aspect-video bg-neutral-100 dark:bg-neutral-800 rounded-2xl mb-6 overflow-hidden">
+                <img 
+                  src="/src/assets/images/research_news.png" 
+                  alt={article.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <div className="flex items-center gap-3 mb-3">
                 <span className="text-xs font-bold text-primary-dark uppercase tracking-wider">{article.category}</span>

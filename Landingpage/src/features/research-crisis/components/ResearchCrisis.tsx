@@ -13,9 +13,9 @@ const ResearchCrisis = () => {
   if (!data) return <div className="py-24 bg-gray-50 animate-pulse h-[400px]" />;
 
   return (
-    <section id="about" className="py-24 bg-gray-50 dark:bg-neutral-900/50">
+    <section id="about" className="py-12 md:py-24 bg-gray-50 dark:bg-neutral-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-neutral-900 dark:text-neutral-50">{data.title}</h2>
             <p className="text-lg text-gray-600 dark:text-neutral-400 mb-8 leading-relaxed">

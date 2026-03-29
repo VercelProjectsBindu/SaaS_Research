@@ -13,7 +13,7 @@ const ClosedBeta = () => {
   if (!data) return <div className="py-24 bg-black animate-pulse h-[400px]" />;
 
   return (
-    <section className="py-24 bg-black text-white">
+    <section className="py-12 md:py-24 bg-black text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-8">{data.title}</h2>
